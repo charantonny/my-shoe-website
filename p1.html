@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Collection - Best Shoes for You</title>
+    </head>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            margin: 10;
+            padding: 10;
+        }
+        body{
+            background-color: bisque;
+            color: #070101;
+            line-height: 1.5;
+        }
+        header{
+            background: #aeae0e;
+            color: black;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav ul{
+            display: flex;
+            list-style: none;
+        }
+        header nav ul li{
+            margin: 20px;
+        }
+        header nav ul li a{
+            color: #501717;
+            font-size: larger;
+        }
+        header nav ul li a:hover{
+            text-decoration: none;
+        }
+        #hero{
+            background: url() no-repeat center center;
+            color: #392993;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        #hero h2{
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        #hero p{
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+        .cta-button:hover{
+            background-color: #b64526;
+        }
+        #collection{
+            padding: 50px20px;
+            text-align: center;
+            background-color: #9cd59c;
+
+        }
+        #collection h2{
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .shoe-container{
+            display: flex;
+            justify-content: space-around;
+            gap:20px;
+            flex-wrap: wrap;
+        }
+        .shoe-item{
+            width:30%;
+            background: #5de6d4;
+            border-radius: 20px;
+            box-shadow: 10px;
+            transition: transform 0.3s ease;
+        }
+        .shoe-item:hover{
+            transform: scale(1.05);
+        }
+        .shoe-item h3{
+            font-size: 1.8rem;
+            margin:15px;
+        }
+        .shoe-item p{
+            font-size: 1rem;
+            color: #692424;
+        }
+        .buy-button{
+        
+            background-color: #f67f5e;
+            color: #070101;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        .buy-button:hover{
+            background-color: #7948d3;
+        }
+        footer{
+            background: #64d550;
+            color: black;
+            padding: 15px;
+        }
+        footer .social-links{
+            margin: 20px;
+        }
+        footer .social-links a{
+            color: #501717;
+            justify-content: space-between;
+            margin: 0 10px;
+            font-size: 1rem;
+        }
+        footer .social-links a:hover{
+            background-color: #5081d5;
+        }
+
+        
+    </style>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>MY SHOES</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Step Into Comfort and Style</h2>
+        <p>Explore our latest collection of premium shoes designed for every occasion.</p>
+        <a href="#collection" class="cta-button">Shop Now</a>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection">
+        <h2>Our Collection</h2>
+        <div class="shoe-container">
+            <div class="shoe-item">
+                <img src="shoe1.jpg" width="300" height="300" alt="Shoe 1">
+                <h3>Sporty Sneakers</h3>
+                <p>Comfortable and stylish sneakers for your daily adventures.</p>
+                <a href="#contact" class="buy-button">Buy Now</a>
+            </div>
+            <div class="shoe-item">
+                <img src="shoe2.jpg" width="300" height="300" alt="Shoe 2">
+                <h3>Classic Boots</h3>
+                <p>Durable and fashionable boots for all seasons.</p>
+                <a href="#contact" class="buy-button">Buy Now</a>
+            </div>
+            <div class="shoe-item">
+                <img src="shoe3.avif" width="300" height="300" alt="Shoe 3">
+                <h3>Sport shoe</h3>
+                <p>Perfect shoe for every ride</p>
+                <a href="#contact" class="buy-button">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+     <center>
+    <footer>
+        <p>&copy; 2025 ShoeStore. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+    </center>
+</body>
+</html>
